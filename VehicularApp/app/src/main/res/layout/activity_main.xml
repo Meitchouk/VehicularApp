@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity.kt">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Agregar el título -->
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="Contador Vehicular"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Sección de Vehículos de Pasajeros -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Vehículos de Pasajeros"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_auto"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="Automóvil"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_jeep"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jeep"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_jeep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <!-- Agrega los demás botones y contadores de la sección de Vehículos de Pasajeros en el mismo patrón -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Microbus"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="Microbus"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Microbus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_Minibus"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:text="Minibus"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Minibus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Bus"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bus"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_Bicicleta"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:text="Bicicleta"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Bicicleta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Motocicleta"
+                    android:layout_width="133dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Motocicleta"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_Motocicleta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_Pick_Up_Camioneta"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Up / Camioneta"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Pick_Up_Camioneta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Sección de Vehículos de Carga -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Vehículos de Carga"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Camiones_de_2_Ejes"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:text="Camiónes de 2 Ejes"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Camiones_de_2_Ejes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_Camiones_de_3_Ejes"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Camiónes de 3 Ejes"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_Camiones_de_3_Ejes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Camion_Carga_Pesada_menorigual_4_Ejes"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:text="Camión Carga Pesada &lt;= 4 Ejes"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Camion_Carga_Pesada_menorigual_4_Ejes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_Camion_Carga_Pesada_mayorigual_5_Ejes"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Camión Carga Pesada >= 5 Ejes"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_Camion_Carga_Pesada_mayorigual_5_Ejes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Camion_Remolque_menorigual_4_Ejes"
+                    android:layout_width="131dp"
+                    android:layout_height="wrap_content"
+                    android:text="Camión Remolque &lt;= 4 Ejes"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Camion_Remolque_menorigual_4_Ejes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_Camion_Remolque_mayorigual_5_Ejes"
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Camión Remolque >= 5 Ejes"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_Camion_Remolque_mayorigual_5_Ejes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Camion_Liviano_de_carga"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Camión Liviano de Carga"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/text_Camion_Liviano_de_carga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!-- Sección de Otros Vehículos -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Otros Vehículos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Vehiculo_Agricola"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vehículo Agrícola"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Vehiculo_Agricola"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_Vehiculo_Construccion"
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:text="Vehículo Construccion"
+                    android:textSize="10sp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"/>
+
+                <TextView
+                    android:id="@+id/text_Vehiculo_Construccion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_Remolques_y_o_trailers"
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Remolques y/o trailers"
+                    android:textSize="10sp" />
+                <TextView
+                    android:id="@+id/text_Remolques_y_o_trailers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:gravity="center"/>
+            </LinearLayout> 
+
+        </LinearLayout>
+
+        <!-- Botón de Exportar Datos -->
+        <Button
+            android:id="@+id/button_exportar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exportar Datos"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
